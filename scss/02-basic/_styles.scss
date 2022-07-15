@@ -31,7 +31,12 @@ nav.nav {
     }
 }
 
-main.main {
+main.shop {
+    overflow: hidden;
+    
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+
     padding-left: 3rem;
     padding-right: 3rem;
 
@@ -45,10 +50,16 @@ main.main {
             text-align: center;
 
             figure.product__image {
-                width: 290px;
-                height: 290px;
+                width: 240px;
+                height: 240px;
 
                 place-items: center;
+            }
+
+            figcaption.product__details {
+                margin-top: 3rem;
+
+                font-size: .9rem;
             }
 
         }
@@ -56,6 +67,20 @@ main.main {
 
 }
 
+// CATALOGUE PAGE
+section.video__container {
+    width: 1408px;
+    height: 700px;
+
+    video {
+        width: 100%;
+    }
+}
+
+section.about {
+    width: 1408px;
+    height: 700px;
+}
 
 
 
