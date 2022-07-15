@@ -1,0 +1,80 @@
+// INDEX PAGE
+
+header.header {
+    top:0;
+
+    h1.logo {
+        font-family: var(--logo-fnt);
+        font-size: 5rem;
+
+        padding: 0 2rem 2rem 2rem ;
+    }
+}
+
+nav.nav {
+    width: 100%;
+
+    padding: 3rem;
+
+    bottom: 0;
+    z-index: 3;
+
+    ul.nav__list {
+        text-transform: uppercase;
+        font-size: .75rem;
+
+        justify-content: space-between;
+    
+        div.left li {
+            margin-right: 6rem;
+        }
+    }
+}
+
+main.main {
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    div.main__container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+
+        div.product {
+            place-items: center;
+        
+            text-align: center;
+
+            figure.product__image {
+                width: 290px;
+                height: 290px;
+
+                place-items: center;
+            }
+
+        }
+    }
+
+}
+
+
+
+
+
+// BAG PAGE
+
+section.bag {   
+
+    div.bag__container {
+        height: 100vh;
+        width: 100vw;
+
+        place-items: center;
+
+        span.bag__empty {
+
+            font-size: 1.3rem;
+        }
+    }
+    
+}
+
