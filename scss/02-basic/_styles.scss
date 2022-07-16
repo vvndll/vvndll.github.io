@@ -1,65 +1,65 @@
 // INDEX PAGE
 
 header.header {
-    justify-content: space-between;
 
-    span.logo {
+    h1.logo {
         font-family: var(--logo-fnt);
-        font-size: 3rem;
-        font-weight: 400;
+        font-size: 2rem;
+        font-weight: 600;
 
-        margin-left: 3rem;
-
-        padding-top: 9rem;
-
-
-     
+        padding-left: 2rem;
+        padding-top: 1rem;
 
     }
+}
 
+section.video__container {
+    width: 100vw;
+    height: 100vh;
+
+    z-index: -1;
+
+    overflow: hidden;
+
+    video {
+        width: 100%;
+    }
+}
+
+main.home {
+
+}
+
+#header, #nav {
+    color: var(--white-clr);
+
+    mix-blend-mode: difference;
+}
+
+nav.nav {
+    width: 100%;
+
+    padding: 3rem;
+
+    bottom: 0;
+    z-index: 3;
+
+    ul.nav__list {
+        text-transform: uppercase;
+        font-size: .75rem;
+
+        justify-content: space-between;
     
-
-    // div.ticker__container {
-    //     overflow: hidden;
-        
-    //     font-size: .6rem;
-
-    //     // border-top: 1px solid black;
-    //     // border-bottom: 1px solid black;
-
-    //     margin: 0 auto 0 auto;
-
-    //     cursor: pointer;
-        
-    //     div.ticker__move {
-    //         animation: tickerh 15s linear infinite forwards;
-
-    //         div.ticker__item {
-    //             box-sizing: border-box;
-        
-    //             flex-shrink: 0;
-    //             flex-basis: 1500px;
-                
-        
-    //             width:100%;
-        
-    //             padding: .3rem 0 .3rem 0;
-        
-    //             text-align: center;
-        
-    //            }
-    //     }
-    // }
-
+        div.left li {
+            margin-right: 6rem;
+        }
+    }
 }
 
-@keyframes tickerh {
-    0% {transform: translate3d(100%, 0, 0);}
-    100% {transform: translate3d(-400%,0 ,0);}
-}
-
+// SHOP PAGE
 
 main.shop {
+    padding-top: 15rem;
     padding-bottom: 4rem;
 
     padding-left: 3rem;
@@ -106,45 +106,6 @@ main.shop {
     }
 
 }
-
-nav.nav {
-    width: 100%;
-
-    padding: 3rem;
-
-    bottom: 0;
-    z-index: 3;
-
-    ul.nav__list {
-        text-transform: uppercase;
-        font-size: .75rem;
-
-        justify-content: space-between;
-    
-        div.left li {
-            margin-right: 6rem;
-        }
-    }
-}
-
-
-// CATALOGUE PAGE
-section.video__container {
-    width: 1408px;
-    height: 700px;
-
-    video {
-        width: 100%;
-    }
-}
-
-section.about {
-    width: 1408px;
-    height: 700px;
-}
-
-
-
 
 // BAG PAGE
 
