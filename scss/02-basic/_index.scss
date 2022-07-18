@@ -1,0 +1,119 @@
+
+header#header {
+    div.logo__container {
+        h1.logo {
+            font-size: 8rem;
+            font-weight: 400;
+
+            line-height: .8;
+        }
+    }
+}
+
+nav#nav {
+    color: var(--white-clr);
+
+    mix-blend-mode: difference;
+
+    font-size: .85rem;
+    font-weight: 400;
+
+    width: 100%;
+
+    padding: 2rem 1rem;
+
+    bottom: 0;
+
+    ul.nav__list {
+        grid-template-columns: 45% 45% 10%;
+
+        align-items: center;
+
+        div.__left{
+            justify-content: space-between;
+        }
+
+        div.__between {
+            justify-content: center;
+            
+            div.ticker__container {
+                    overflow: hidden;
+                    
+                    font-size: .6rem;
+
+                    width: 250px;
+
+                    cursor: pointer;
+                    
+                    div.ticker__move {
+                        animation: tickerh 15s linear infinite forwards;
+
+                        div.ticker__item {
+                            box-sizing: border-box;
+                    
+                            flex-shrink: 0;
+                            flex-basis: 1500px;
+                        
+                            width:100%;
+                    
+                            padding: 0 .5rem;
+                    
+                            text-align: center;
+                    
+                        }
+                    }
+                }
+            }
+
+            @keyframes tickerh {
+                0% {transform: translate3d(100%, 0, 0);}
+                100% {transform: translate3d(-400%,0 ,0);}
+            }
+
+        div.__right {
+            justify-content: flex-end;
+        }
+    }
+}
+
+//SHOP PAGE
+main.shop {
+    div.main__container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        padding: 20rem 0 5rem 2.5rem;
+    
+        div.item__container {
+            margin-bottom: 5rem;
+
+            place-items: center;
+
+            figure.item__image {
+                width: 300px;
+                height: 300px;
+            }
+
+            figcaption.item__details {
+                font-size: .9rem;
+
+                margin-top: 1.5rem;
+                
+                text-align: center;
+            }
+
+        }
+    }
+}
+//END OF SHOP
+
+//BAG PAGE
+main.bag {
+    div.main__container {
+        font-size: 1.5rem;
+
+        place-items: center;
+
+        height: 100vh;
+    }
+}
+//END OF BAG
