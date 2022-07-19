@@ -1,11 +1,23 @@
-
+//HEADER & NAV
 header#header {
     div.logo__container {
         h1.logo {
             font-size: 8rem;
-            font-weight: 400;
 
             line-height: .8;
+        }
+    }
+
+    div.description__container {
+        width: 630px;
+
+        padding: .5rem;
+
+        h1.description {
+            font-size: .65rem;
+            font-weight: 700;
+
+            text-align: justify;
         }
     }
 }
@@ -20,7 +32,7 @@ nav#nav {
 
     width: 100%;
 
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
 
     bottom: 0;
 
@@ -30,6 +42,8 @@ nav#nav {
         align-items: center;
 
         div.__left{
+            margin-left: 3rem;
+
             justify-content: space-between;
         }
 
@@ -39,14 +53,15 @@ nav#nav {
             div.ticker__container {
                     overflow: hidden;
                     
-                    font-size: .6rem;
+                    font-size: .65rem;
+                    font-weight: 400;
 
                     width: 250px;
 
                     cursor: pointer;
                     
                     div.ticker__move {
-                        animation: tickerh 15s linear infinite forwards;
+                        animation: tickerh 24s linear infinite forwards;
 
                         div.ticker__item {
                             box-sizing: border-box;
@@ -59,12 +74,10 @@ nav#nav {
                             padding: 0 .5rem;
                     
                             text-align: center;
-                    
                         }
                     }
                 }
             }
-
             @keyframes tickerh {
                 0% {transform: translate3d(100%, 0, 0);}
                 100% {transform: translate3d(-400%,0 ,0);}
@@ -75,45 +88,45 @@ nav#nav {
         }
     }
 }
+// END OF HEADER & NAV
+
+
 
 //SHOP PAGE
 main.shop {
     div.main__container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4,1fr);
 
-        padding: 20rem 0 5rem 2.5rem;
+        padding: 16rem 2.5rem 4rem 0;
     
         div.item__container {
-            margin-bottom: 5rem;
+            margin-bottom: 8rem;
 
             place-items: center;
 
             figure.item__image {
-                width: 300px;
-                height: 300px;
+                width: 290px;
+                height: 290px;
             }
 
             figcaption.item__details {
-                font-size: .9rem;
+                font-size: .83rem;
 
                 margin-top: 1.5rem;
                 
                 text-align: center;
             }
-
         }
     }
 }
 //END OF SHOP
 
+
+
+//ABOUT PAGE
+//END OF ABOUT PAGE
+
+
+
 //BAG PAGE
-main.bag {
-    div.main__container {
-        font-size: 1.5rem;
-
-        place-items: center;
-
-        height: 100vh;
-    }
-}
 //END OF BAG
