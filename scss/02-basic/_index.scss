@@ -1,5 +1,7 @@
 //HEADER & NAV
 header#header {
+    font-family: var(--header-fnt);
+
     div.logo__container {
         h1.logo {
             font-size: 8rem;
@@ -9,13 +11,15 @@ header#header {
     }
 
     div.description__container {
-        width: 630px;
+        width: 626px;
 
         padding: .5rem;
 
         h1.description {
-            font-size: .65rem;
-            font-weight: 700;
+            font-size: .6rem;
+            font-weight: 800;
+
+            line-height: 1;
 
             text-align: justify;
         }
@@ -27,8 +31,9 @@ nav#nav {
 
     mix-blend-mode: difference;
 
-    font-size: .75rem;
-    font-weight: 400;
+    font-family: var(--header-fnt);
+    font-size: .7rem;
+    font-weight: 600;
 
     width: 100%;
 
@@ -44,8 +49,6 @@ nav#nav {
         div.__left{
             text-transform: uppercase;
 
-            margin-right: 3rem;
-
             justify-content: space-between;
         }
 
@@ -55,8 +58,7 @@ nav#nav {
             div.ticker__container {
                     overflow: hidden;
                     
-                    font-size: .65rem;
-                    font-weight: 400;
+                    font-size: .6rem;
 
                     width: 250px;
 
@@ -92,7 +94,6 @@ nav#nav {
         }
     }
 }
-
 // END OF HEADER & NAV
 
 
@@ -110,8 +111,8 @@ main.shop {
             place-items: center;
 
             figure.item__image {
-                width: 290px;
-                height: 290px;
+                width: 300px;
+                height: 300px;
             }
 
             figcaption.item__details {
@@ -129,17 +130,80 @@ main.shop {
 
 
 //ABOUT PAGE
+main.about {
+    padding: .5rem;
+
+    div.about__container {
+        margin-top: 8rem;
+        margin-bottom: 2rem;
+
+        padding-bottom: 4rem;
+
+        width: 50vw;
+        height: 100%;
+
+        font-family: var(--header-fnt);
+        font-size: .6rem;
+        font-weight: 600;
+
+        text-align: left;
+
+        section.about {
+           border-top: 2px solid; 
+
+           padding-top:.5rem;
+
+           margin-bottom: 4rem;
+
+        }
+        section.stockists {
+            margin-bottom: 4rem;
+
+            div.list__container {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+
+                padding-top: 2rem;
+
+                div.stockists__item {
+                    margin-bottom: 1.3rem;
+                }
+            }
+        }
+
+        section.terms {
+            h1 {
+                margin-bottom: 2rem;
+            }
+            h4 {
+                margin-bottom: .5rem;
+            }
+            div.shipping, div.return, div.pricing, div.copyright, div.use, div.privacy {
+                margin-bottom: 2rem;
+            }
+        }
+
+    }
+}
 //END OF ABOUT PAGE
 
 
 
 //BAG PAGE
+main.bag {
+    div.bag__container {
+        font-size: 1.5rem;
+        font-weight: 400;
+
+        place-items: center;
+
+        height: 100vh;
+    }
+}
 //END OF BAG
 
 
-/*
-FOR THE ITEM'S PAGE
-*/
+
+
 
 
 //ITEM__1
@@ -164,6 +228,7 @@ FOR THE ITEM'S PAGE
                 width: 25rem;
 
                 margin-bottom: 3rem;
+
             }
             div.item__info {
                 grid-template-columns: 10% 1fr;
@@ -171,17 +236,18 @@ FOR THE ITEM'S PAGE
 
                 font-size: .70rem;
 
-                margin-bottom: 1rem;
+                margin-bottom: 2rem;
 
                 div.information {
-                    
                     text-align: left;
+
                 }
                 div.price {
                     grid-area: 2 / 1 / 3/ 3 ;
                     
                     font-size: 1.2rem;
                     font-weight: 450;
+
                 }
             }
             button.add__to__bag {
@@ -196,9 +262,39 @@ FOR THE ITEM'S PAGE
                 border-radius: 25px;
                 
                 padding: .5rem 1.2rem;
+
+                cursor: pointer;
+
+                transition: background-color .25s ease-out;
+
+            }
+
+            button.to__checkout {
+                font-size: 1rem;
+
+                text-transform: uppercase;
+
+                color: var(--white-clr);
+
+                border-style: none;
+                background-color: black;
+
+                border: 1px solid black;
+                border-radius: 27px;
+                
+                padding: .5rem 1.2rem;
+
+                cursor: pointer;
+
+            }
+
+            button.add__to__bag:hover {
+                color: var(--white-clr);
+
+                background-color: black;
+
             }
         }
-
         div.item__preview {
             overflow: scroll;
             top: 0;
@@ -210,9 +306,9 @@ FOR THE ITEM'S PAGE
 
             width: 60vw;
             height: 100%;
-        }
 
-        
+            padding: 0 3rem;
+        }
     }
 
 
