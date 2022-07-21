@@ -110,11 +110,6 @@ main.shop {
 
             place-items: center;
 
-            figure.item__image {
-                width: 300px;
-                height: 300px;
-            }
-
             figcaption.item__details {
                 font-size: .83rem;
 
@@ -449,4 +444,42 @@ div.request__container {
     }
 }
 //END OF FORMS
+
+
+//NAV FOR MOBILE 
+nav#nav__mobile {
+    position: fixed;
+
+    bottom: 0;
+
+    width: 100%;
+
+    color: var(--white-clr);
+
+    mix-blend-mode: difference;
+    
+    ul.nav__list {
+        padding: .5rem;
+
+        margin-bottom: 1rem;
+        width: 100%;
+        
+        justify-content: space-between;
+
+        text-align: center;
+
+        font-size: .7rem;
+        font-weight: 500;
+        font-family: var(--header-fnt);
+
+        li.nav__item {
+            padding-top: .3rem;
+            padding-bottom: .3rem;
+
+            width: 100%;
+         
+        }
+    }
+}
+//END OF NAV FOR MOBILE
 
