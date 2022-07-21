@@ -33,7 +33,7 @@ nav#nav {
 
     font-family: var(--header-fnt);
     font-size: .7rem;
-    font-weight: 600;
+    font-weight: 500;
 
     width: 100%;
 
@@ -134,7 +134,7 @@ main.about {
     padding: .5rem;
 
     div.about__container {
-        margin-top: 8rem;
+        margin-top: 5rem;
         margin-bottom: 2rem;
 
         padding-bottom: 4rem;
@@ -147,6 +147,8 @@ main.about {
         font-weight: 600;
 
         text-align: left;
+
+        line-height: 1;
 
         section.about {
            border-top: 2px solid; 
@@ -199,7 +201,7 @@ main.about {
 main.contact {
     padding-left: .5rem;
     div.contact__container {
-        margin-top: 8rem;
+        margin-top: 5rem;
 
         padding-bottom: 4rem;
 
@@ -215,16 +217,24 @@ main.contact {
         text-align: left;
 
         div.contact__item {
+            margin-top: .5rem;
             margin-bottom: 1rem;
 
+            line-height: 1;
+
             h4 {
+
                 text-transform: uppercase;
 
                 margin-bottom: .5rem;
             }
 
             a.link {
-                color: rgb(0, 64, 255);
+                transition: color .4s ease-out;
+            }
+
+            a.link:hover {
+                color:rgb(17, 0, 255);
             }
 
             input.email {
@@ -239,9 +249,6 @@ main.contact {
             }
 
             button.submit {
-                border-style: none;
-                background: none;
-                
                 padding: .3rem;
             }
         }
@@ -276,7 +283,6 @@ main.bag {
             overflow: hidden;
 
             width: 40vw;
-            height: 120vh;
 
             padding: 4.5rem 2rem;
 
@@ -311,13 +317,12 @@ main.bag {
 
                 }
             }
-            button.add__to__bag {
+            div.btn1 {
+                width: max-content;
+
                 font-size: 1rem;
 
                 text-transform: uppercase;
-
-                border-style: none;
-                background: none;
 
                 border: 1px solid black;
                 border-radius: 25px;
@@ -330,14 +335,19 @@ main.bag {
 
             }
 
-            button.to__checkout {
+            .btn1.active {
+                display: none;
+            }
+
+            div.btn2 {
+                width: max-content;
+                
                 font-size: 1rem;
 
                 text-transform: uppercase;
 
                 color: var(--white-clr);
 
-                border-style: none;
                 background-color: black;
 
                 border: 1px solid black;
@@ -349,7 +359,7 @@ main.bag {
 
             }
 
-            button.add__to__bag:hover {
+            div.button.btn1:hover {
                 color: var(--white-clr);
 
                 background-color: black;
@@ -367,9 +377,76 @@ main.bag {
 
             width: 60vw;
             height: 100%;
-
-            padding: 0 3rem;
         }
     }
 //END OF ITEMS PAGE
+
+
+
+//FORMS PAGE
+div.request__container {
+    font-family: var(--header-fnt);
+
+    width: 100vw;
+    height: 100%;
+
+    place-items: center;
+    div.form__container {
+        width: max-content;
+
+        padding: 2rem;
+
+        h1 {
+            font-size: 4.5rem;
+        }
+
+        h3 {
+            text-transform: uppercase;
+
+            margin-bottom: 8rem;
+        }
+
+        form {
+            flex-direction: column;
+
+            padding: 2rem 1rem 4rem 1rem;
+
+            label {
+                text-transform: uppercase;
+
+                font-size: .6rem;
+                font-weight: 800;
+            }
+
+            input {
+                padding: .5rem;
+
+                margin-bottom: .5rem;
+            }
+
+            textarea {
+                resize: none;
+
+                padding: .5rem;
+            }
+
+            button {
+                margin-top: 1.5rem;
+
+                background-color: rgb(76, 76, 76);
+
+                color: hsl(208, 100%, 97%);
+
+                padding: .8rem;
+
+                transition: background-color .2s ease-out;
+            }
+
+            button:hover {
+                background-color: rgb(210, 210, 210);
+            }
+        }
+    }
+}
+//END OF FORMS
 

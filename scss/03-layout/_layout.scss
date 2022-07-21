@@ -1,0 +1,165 @@
+//FOR TABLET
+
+@media screen and (max-width:870px) {
+    header#header {
+        padding: .5rem;
+        div.logo__container {
+            h1.logo {
+                font-size: 5rem;
+            }
+        }
+        div.description__container {
+            width: 390px;
+            h1.description {
+                font-size: .5rem;
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    main.shop {
+        div.main__container {
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 1rem;
+
+            padding: 8rem 1rem 4rem 1rem;
+        }
+
+        div.item__container {
+            
+            figcaption.item__details {
+                font-size: .73rem;
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    main.about {
+        padding: 1rem;
+        div.about__container {
+            width: 90vw;
+
+            font-size: .6rem;
+
+            text-align: justify;
+
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    main.contact {
+        padding-left: 1rem;
+        div.contact__container {
+            width: 90vw;
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    main.bag {
+        div.bag__container {
+            font-size: 1rem;
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    nav#nav {
+        padding: 3rem 1.5rem;
+        ul.nav__list {
+            font-size: .6rem;
+            div.between {
+                div.ticker__container {
+                    width: 190px;
+
+                    font-size: .4rem;
+                }
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    div.items__container {
+        div.item__description {
+            padding: 4rem 1rem;
+
+            h1.item__name {
+                font-size: 1.6rem;
+            }
+
+            div.item__info {
+                font-size: .6rem;
+
+                div.price {
+                    font-size: 1rem;
+                }
+            }
+
+            div.btn1 {
+                font-size: .8rem;
+
+                padding: .4rem 1rem;
+            }
+
+            div.btn2 {
+                font-size: .8rem;
+
+                padding: .4rem 1rem;
+            }
+        }
+    }
+}
+
+//END OF TABLET
+
+
+
+//FOR MOBILE
+@media screen and (max-width:400px) {
+    header#header {
+        padding: 1rem;
+        div.logo__container {
+            h1.logo{
+                margin-top: 2rem;
+
+                text-align: center;
+
+                font-size: 2rem;
+            }
+        }
+
+        div.description__container {
+            h1.description {
+                display: none;
+            }
+        }
+
+    }
+
+
+
+    main.shop {
+        margin-top: 3rem;
+        div.main__container {
+            grid-template-columns: 1fr;
+
+            padding: 0;
+        }
+
+        div.item__container {
+            margin-bottom: 1rem;
+
+            height: 300px;
+        }
+    }
+}
+//END OF MOBILE
+
+
+
+
