@@ -163,6 +163,7 @@ main.about {
                 grid-template-columns: 1fr 1fr 1fr 1fr;
 
                 padding-top: 2rem;
+                padding-left: 1rem;
 
                 div.stockists__item {
                     margin-bottom: 1.3rem;
@@ -176,15 +177,79 @@ main.about {
             }
             h4 {
                 margin-bottom: .5rem;
+
+                text-transform: uppercase;
             }
             div.shipping, div.return, div.pricing, div.copyright, div.use, div.privacy {
                 margin-bottom: 2rem;
+
+                p {
+                    padding-left: 1rem;
+                }
             }
         }
 
     }
 }
 //END OF ABOUT PAGE
+
+
+
+//CONTACT PAGE
+main.contact {
+    padding-left: .5rem;
+    div.contact__container {
+        margin-top: 8rem;
+
+        padding-bottom: 4rem;
+
+        border-top: 2px solid;
+
+        width: 50vw;
+        height: 100%;
+
+        font-family: var(--header-fnt);
+        font-size: .6rem;
+        font-weight: 600;
+
+        text-align: left;
+
+        div.contact__item {
+            margin-bottom: 1rem;
+
+            h4 {
+                text-transform: uppercase;
+
+                margin-bottom: .5rem;
+            }
+
+            a.link {
+                color: rgb(0, 64, 255);
+            }
+
+            input.email {
+                border-style: none;
+                background: none;
+
+                width: 300px;
+
+                padding: .3rem;
+
+                border-bottom: 1px solid;
+            }
+
+            button.submit {
+                border-style: none;
+                background: none;
+                
+                padding: .3rem;
+            }
+        }
+
+
+    }
+}
+//END OF CONTACT
 
 
 
@@ -203,19 +268,15 @@ main.bag {
 
 
 
-
-
-
-//ITEM__1
-
+//ITEMS PAGE
     div.items__container {
         grid-template-columns: 40% 1fr;
-        
+
         div.item__description {
             overflow: hidden;
 
             width: 40vw;
-            height: 100vh;
+            height: 120vh;
 
             padding: 4.5rem 2rem;
 
@@ -310,7 +371,5 @@ main.bag {
             padding: 0 3rem;
         }
     }
-
-
-//END OF ITEM__1
+//END OF ITEMS PAGE
 
